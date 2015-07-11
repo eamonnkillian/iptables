@@ -81,7 +81,7 @@ echo " "
 # Range then define --src-range 192.168.0.0-192.169.0.0
 #
 
-ALLOWED="86.159.1.97"
+ALLOWED="<Enter yous>"
 
 iptables -A INPUT --in-interface eth1 -p icmp --icmp-type echo-request -s $ALLOWED -j ACCEPT
 iptables -A OUTPUT --out-interface eth1 -p icmp --icmp-type echo-reply -j ACCEPT
